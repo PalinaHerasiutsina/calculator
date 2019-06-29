@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela|Orbitron');
+@font-face {
+    font-family: 'digital7_mono';
+    src: url('../fonts/digital7_mono.eot');
+    src: url('../fonts/digital7_mono.eot') format('embedded-opentype'),
+         url('../fonts/digital7_mono.woff2') format('woff2'),
+         url('../fonts/digital7_mono.woff') format('woff'),
+         url('../fonts/digital7_mono.ttf') format('truetype'),
+         url('../fonts/digital7_mono.svg#digital7_mono') format('svg');
+}
+/* ==================================================
+Basic Settings
+================================================== */
+body {
+    font-size: 16px;
+    min-width: 320px;
+    line-height: 1.75;
+    overflow-x: hidden;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+}
+
+/* ==================================================
+Main Section
+================================================== */
+.wrapper {
+    background: #EBF2F6; no-repeat center/cover;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.wrCalc {
+	width: 50%;
+    background-color: #EBF2F6;
+}
+.calc {
+	height: 400px;
+	width: 300px;
+    background-color: #FFFFFF;
+    padding: 30px 15px;
+    border-radius: 10px;
+    position: relative;
+	top: 50%;
+	margin-left: auto;
+    margin-right: auto;
+	transform: translateY(-50%);
+	
+
+}
+
+.td {
+	margin: 0;
+	padding: 0;
+}
+.display {
+    background-color: #FFFFFF;
+    color: #756F6F;
+    min-width: 94%;
+    min-height: 120%;
+    text-align: right;
+    font-size: 20px;
+    border: none;
+}
+
+.btn {
+    font: 25px 'Orbitron', sans-serif;
+    background-color: #FFFFFF;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+    color: #666;
+    
+    margin:10;
+    transition: all .4s;
+    width: 50px;
+    height: 50px; 
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #eaeaea;
+    
+}
+
+.btn-wide {
+	display: grid;
+	grid-column: 1/ span 2;
+	grid-column: 3 / span 2;
+	height: 50px;
+	width: 115px;
+    font: 25px 'Orbitron', sans-serif;
+    background-color: #D2A5A5;
+    border-radius: 5px;
+    color: #666;
+    padding: 15px;
+    margin: 10;
+}
+
+.number {
+	background-color: #EBF2F6;
+}
+
+.ce {
+	background-color: #D2A5A5;
+
+}
+
+.operation   {
+	background-color: #D2A5A5;
+
+}
+.decimal {
+	background-color: #D2A5A5;
+
+}
+
+.wrText{
+	background-color: #EBF2F6;
+}
+.text{
+	background-color: #EBF2F6; 
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+.h1 {
+    font: 40px 'Gabriela', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 5vh 50 30px;
+    color: #756F6F
+}
+
+.h3 {
+    font: 30px 'Gabriela', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 100;
+    padding: 5vh 50 30px;
+    color: #756F6F
+}
