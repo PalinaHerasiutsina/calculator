@@ -22,7 +22,6 @@ for (var i=0; i<operations.length; i++){
     });
 };
 
-
 for (var i=0; i<clearBtns.length; i++){
     var clearBtn = clearBtns[i];
     clearBtn.addEventListener('click', function (e) {
@@ -31,15 +30,8 @@ for (var i=0; i<clearBtns.length; i++){
     });
 };
 
-
 decimalBtn.addEventListener('click', decimal);
-
-
 resultBtn.addEventListener('click', result);
-
-
-
-
 
 function numberPress(number) { 
     if (MemoryNewNumber){
@@ -103,5 +95,4 @@ function clear(id){
         MemoryCurrentNumber = 0;
         MemoryPendingOperation = '';
     };
-    
 };

@@ -20,22 +20,24 @@ body {
     padding: 0;
     margin: 0;
 }
-
 /* ==================================================
 Main Section
 ================================================== */
 .wrapper {
-    background: #EBF2F6; no-repeat center/cover;
+    background: #EBF2F6;
     height: 100vh;
-    margin:0;
-    padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .wrCalc {
-	width: 50%;
+    display: flex;
+    flex: 1;
+	flex-direction: column;
+	justify-content: center;
     background-color: #EBF2F6;
 }
+
 .calc {
 	height: 400px;
 	width: 300px;
@@ -43,23 +45,21 @@ Main Section
     padding: 30px 15px;
     border-radius: 10px;
     position: relative;
-	top: 50%;
 	margin-left: auto;
     margin-right: auto;
-	transform: translateY(-50%);
-	
-
+	box-sizing: border-box;
 }
 
 .td {
 	margin: 0;
 	padding: 0;
 }
+
 .display {
     background-color: #FFFFFF;
     color: #756F6F;
-    min-width: 94%;
-    min-height: 120%;
+    min-width: 230px;
+    min-height: 10px;
     text-align: right;
     font-size: 20px;
     border: none;
@@ -71,21 +71,18 @@ Main Section
     border: 2px solid #eaeaea;
     border-radius: 5px;
     color: #666;
-    
-    margin:10;
     transition: all .4s;
     width: 50px;
     height: 50px; 
     padding: 5px;
     text-align: center;
     border: 2px solid #eaeaea;
-    
-}
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+ }
 
 .btn-wide {
-	display: grid;
-	grid-column: 1/ span 2;
-	grid-column: 3 / span 2;
 	height: 50px;
 	width: 115px;
     font: 25px 'Orbitron', sans-serif;
@@ -93,52 +90,46 @@ Main Section
     border-radius: 5px;
     color: #666;
     padding: 15px;
-    margin: 10;
+    user-select: none;
+    outline: none;
 }
 
 .number {
 	background-color: #EBF2F6;
 }
 
-.ce {
+.ce, .decimal, .operation {
 	background-color: #D2A5A5;
-
-}
-
-.operation   {
-	background-color: #D2A5A5;
-
-}
-.decimal {
-	background-color: #D2A5A5;
-
 }
 
 .wrText{
 	background-color: #EBF2F6;
+	display: flex;
+    flex: 1;
+	flex-direction: column;
+	justify-content: center;
 }
+
 .text{
 	background-color: #EBF2F6; 
-	position: relative;
 	top: 50%;
-	transform: translateY(-50%);
-
 }
+
 .h1 {
     font: 40px 'Gabriela', sans-serif;
     text-transform: capitalize;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
-    margin: 0;
-    padding: 5vh 50 30px;
-    color: #756F6F
+    margin: 0px;
+    padding: 10vh 20px 20px;
+    color: #756F6F;
 }
 
 .h3 {
     font: 30px 'Gabriela', sans-serif;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
-    margin: 100;
-    padding: 5vh 50 30px;
-    color: #756F6F
+    margin: 0px;
+    padding: 0vh 20px 30px;
+    color: #756F6F;
 }
